@@ -1,0 +1,11 @@
+{
+  "Comment": "A state machine that submits a Job to Degister the instance from ALB.",
+  "StartAt": "Submit Job - Start Deregisterion",
+  "States": {
+    "Submit Job - Start Deregisterion": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:eu-west-1:632210341693:function:DeregisterTargetTags",
+      "End": true
+    }
+  }
+}
